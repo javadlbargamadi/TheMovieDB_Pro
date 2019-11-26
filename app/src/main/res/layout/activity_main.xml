@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="320dp"
         android:text="Hello World!"
@@ -19,27 +19,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="fill_parent"
             android:orientation="horizontal">
 
             <Button
+                android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:id="@+id/btnSearch"
-                android:layout_width="190dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/btn_selector"
                 android:text="Have a Search"
                 android:textAlignment="center"
                 android:textColor="#fff" />
 
             <Button
+                android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:id="@+id/btnSaved"
-                android:layout_width="190dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
                 android:background="@drawable/btn_selector"
-                android:text="Search the Saved"
+                android:text="Research the Saved"
                 android:textAlignment="center"
                 android:textColor="#fff" />
         </LinearLayout>
